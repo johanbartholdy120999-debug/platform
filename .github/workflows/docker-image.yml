@@ -53,13 +53,13 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.Johanbart }}
-          password: ${{ secrets.dckr_pat_nmP3U0RNZtXs1jz_8DVa8Lm_1kc }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
         run: |
-          docker build -t Johanbart/YOUR_IMAGE_NAME:latest .
+          docker build -t Johanbart/PlatformUdvidelse:latest .
 
       - name: Push Docker Image
         run: |
-          docker push Johanbart/YOUR_IMAGE_NAME:latest
+          docker push Johanbart/PlatformUdvidelse:latest
