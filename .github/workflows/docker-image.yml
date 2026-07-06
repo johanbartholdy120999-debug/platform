@@ -37,7 +37,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest Syntax_test Syntax_test2
+          pytest Syntax_test.py Syntax_test2.py
 
   docker:
 
