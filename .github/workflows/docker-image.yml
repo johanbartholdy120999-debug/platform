@@ -58,8 +58,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t Johanbart/platform:latest .
+          docker build -t johanbart/platform:latest .
 
       - name: Push Docker Image
         run: |
-          docker push Johanbart/platform:latest
+          docker push johanbart/platform:latest
